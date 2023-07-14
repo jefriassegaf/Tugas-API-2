@@ -1,4 +1,4 @@
-package com.bay.data;
+package com.je.data;
 
 public class User {
     private int id;
