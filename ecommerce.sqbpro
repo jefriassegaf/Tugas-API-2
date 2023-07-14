@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="D:/TI/Semester 2/Pemrograman Berbasis Objek/Code/Ecommerce-Java-API - Copy/ecommerce.db" readonly="0" foreign_keys="0" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="0"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="125"/><column_width id="3" width="2804"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,8:mainproducts"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="addresses" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="52"/><column index="2" value="53"/><column index="3" value="164"/><column index="4" value="67"/><column index="5" value="89"/><column index="6" value="84"/><column index="7" value="89"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="orderDetails" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="56"/><column index="2" value="77"/><column index="3" value="82"/><column index="4" value="52"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="orders" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="52"/><column index="2" value="59"/><column index="3" value="52"/><column index="4" value="52"/><column index="5" value="84"/><column index="6" value="61"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="products" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="52"/><column index="2" value="56"/><column index="3" value="52"/><column index="4" value="106"/><column index="5" value="52"/><column index="6" value="56"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="reviews" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="56"/><column index="2" value="52"/><column index="3" value="106"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sqlite_sequence" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="71"/><column index="2" value="52"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="users" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="52"/><column index="2" value="94"/><column index="3" value="90"/><column index="4" value="222"/><column index="5" value="132"/><column index="6" value="52"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">-- Insert data into the &quot;users&quot; table
+INSERT INTO users (firstName, lastName, email, phoneNumber, type)
+VALUES
+    ('John', 'Doe', 'john.doe@example.com', '1234567890', 'Buyer'),
+    ('Jane', 'Smith', 'jane.smith@example.com', '9876543210', 'Seller'),
+    ('David', 'Johnson', 'david.johnson@example.com', '5555555555', 'Buyer'),
+    ('Emily', 'Brown', 'emily.brown@example.com', '9999999999', 'Seller'),
+	('Sarah', 'Johnson', 'sarah.johnson@example.com', '1111111111', 'Buyer'),
+    ('Michael', 'Anderson', 'michael.anderson@example.com', '2222222222', 'Seller'),
+    ('Jessica', 'Taylor', 'jessica.taylor@example.com', '3333333333', 'Buyer'),
+    ('Andrew', 'Wilson', 'andrew.wilson@example.com', '4444444444', 'Seller'),
+    ('Olivia', 'Davis', 'olivia.davis@example.com', '5555555555', 'Buyer'),
+    ('Matthew', 'Clark', 'matthew.clark@example.com', '6666666666', 'Seller'),
+    ('Sophia', 'Roberts', 'sophia.roberts@example.com', '7777777777', 'Buyer'),
+    ('Christopher', 'Harris', 'christopher.harris@example.com', '8888888888', 'Seller'),
+    ('Ava', 'Hall', 'ava.hall@example.com', '9999999999', 'Buyer'),
+    ('Daniel', 'Turner', 'daniel.turner@example.com', '0000000000', 'Seller');
+
+-- Insert data into the &quot;products&quot; table
+INSERT INTO products (seller, title, description, price, stock)
+VALUES
+    (2, 'Product A', 'Description for Product A', 10.99, 50),
+    (2, 'Product B', 'Description for Product B', 19.99, 100),
+    (4, 'Product C', 'Description for Product C', 5.99, 20),
+    (4, 'Product D', 'Description for Product D', 14.99, 75),
+    (6, 'Product E', 'Description for Product E', 9.99, 30),
+    (8, 'Product F', 'Description for Product F', 24.99, 60),
+    (2, 'Product G', 'Description for Product G', 14.99, 80),
+    (4, 'Product H', 'Description for Product H', 7.99, 10),
+    (10, 'Product I', 'Description for Product I', 19.99, 50),
+    (6, 'Product J', 'Description for Product J', 12.99, 25),
+    (8, 'Product K', 'Description for Product K', 29.99, 40),
+    (2, 'Product L', 'Description for Product L', 17.99, 70),
+    (4, 'Product M', 'Description for Product M', 11.99, 15),
+    (10, 'Product N', 'Description for Product N', 22.99, 35);
+
+
+-- Insert data into the &quot;addresses&quot; table
+INSERT INTO addresses (user, type, line1, line2, city, province, postcode)
+VALUES
+    (1, 'House', '123 Main St', NULL, 'Cityville', 'Province A', '12345'),
+    (1, 'Office', '456 Business Rd', 'Floor 2', 'Townsville', 'Province B', '54321'),
+    (2, 'House', '789 Park Ave', NULL, 'Villageville', 'Province C', '98765'),
+    (3, 'House', '321 Elm St', NULL, 'Hamletville', 'Province D', '54321'),
+    (5, 'House', '987 Elm St', NULL, 'Hamletville', 'Province D', '54321'),
+    (6, 'House', '654 Oak St', NULL, 'Villageville', 'Province C', '98765'),
+    (7, 'House', '321 Maple St', NULL, 'Townsville', 'Province B', '54321'),
+    (9, 'House', '789 Pine St', NULL, 'Cityville', 'Province A', '12345'),
+    (3, 'Office', '555 Corporate Blvd', 'Floor 5', 'Townsville', 'Province B', '54321'),
+    (4, 'Office', '123 Business Rd', 'Floor 3', 'Cityville', 'Province A', '12345'),
+    (10, 'House', '987 Walnut St', NULL, 'Villageville', 'Province C', '98765'),
+    (2, 'Office', '456 Enterprise Ave', 'Suite 10', 'Hamletville', 'Province D', '54321'),
+    (8, 'Office', '789 Commerce St', 'Floor 4', 'Cityville', 'Province A', '12345'),
+    (1, 'Office', '123 Main St', 'Suite 1', 'Townsville', 'Province B', '54321');
+
+
+-- Insert data into the &quot;orders&quot; table
+INSERT INTO orders (buyer, note, total, discount, isPaid)
+VALUES
+    (1, 'Order note 1', 50.99, NULL, 1),
+    (3, NULL, 25.99, 5, 1),
+    (4, 'Order note 3', 35.99, NULL, 0),
+	(2, 'Order note 4', 40.99, NULL, 1),
+    (4, NULL, 15.99, 3, 1),
+    (7, 'Order note 6', 55.99, NULL, 0),
+    (9, 'Order note 7', 30.99, NULL, 1),
+    (5, NULL, 10.99, 2, 1),
+    (10, 'Order note 9', 45.99, NULL, 0),
+    (3, 'Order note 10', 20.99, NULL, 1),
+    (1, NULL, 18.99, 1, 1),
+    (8, 'Order note 12', 25.99, NULL, 0),
+    (6, 'Order note 13', 35.99, NULL, 1);
+
+-- Insert data into the &quot;orderDetails&quot; table
+INSERT INTO orderDetails (`order`, product, quantity, price)
+VALUES
+    (1, 1, 2, 10.99),
+    (1, 2, 1, 19.99),
+    (2, 3, 3, 5.99),
+    (3, 4, 2, 14.99),
+    (2, 3, 2, 5.99),
+    (2, 6, 1, 12.99),
+    (5, 1, 3, 10.99),
+    (5, 4, 2, 7.99),
+    (7, 10, 1, 19.99),
+    (7, 8, 2, 29.99),
+    (9, 2, 1, 14.99),
+    (9, 7, 3, 24.99),
+    (3, 9, 2, 17.99),
+    (3, 2, 1, 14.99);
+
+-- Insert data into the &quot;reviews&quot; table
+INSERT INTO reviews (`order`, star, description)
+VALUES
+    (1, 4, 'Great product!'),
+    (2, 5, 'Excellent service!'),
+    (3, 3, 'Average experience.'),
+    (4, 3, 'Decent product.'),
+    (5, 4, 'Good service.'),
+    (6, 5, 'Excellent quality.'),
+    (7, 5, 'Fast delivery.'),
+    (8, 4, 'Satisfied with the purchase.'),
+    (9, 2, 'Product didn''t meet expectations.'),
+    (10, 5, 'Highly recommended.');</sql><current_tab id="0"/></tab_sql></sqlb_project>
