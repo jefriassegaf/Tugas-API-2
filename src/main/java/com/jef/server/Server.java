@@ -1,4 +1,4 @@
-package com.bay.server;
+package com.je.server;
 
 import com.sun.net.httpserver.HttpServer;
 
