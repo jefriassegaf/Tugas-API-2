@@ -1,80 +1,6 @@
-# Ecommerce Backend API
+# Tugas 2 API
 
-Oleh Bayu Rizky Kurnia Pratama - 2205551070
-
-## Daftar Isi
-
--   [Ecommerce Backend API](#ecommerce-backend-api)
-    -   [Daftar Isi](#daftar-isi)
-    -   [Pengenalan](#pengenalan)
-    -   [Alat](#alat)
-    -   [Prasyarat](#prasyarat)
-    -   [Batasan Program](#batasan-program)
-    -   [Penggunaan](#penggunaan)
-        -   [Persiapan](#persiapan)
-        -   [Otorisasi](#otorisasi)
-        -   [GET](#get)
-        -   [POST](#post)
-        -   [PUT](#put)
-        -   [DELETE](#delete)
-    -   [Penutup](#penutup)
-
-## Pengenalan
-
-Program **E-commerce Backend API** adalah program yang memungkinkan pengguna untuk terhubung dan memanipulasi basis data dari _e-commerce_ tersebut.
-
-## Alat
-
-Berikut alat yang digunakan untuk membangun program ini:
-
--   IntelliJ IDEA
-
-IntelliJ IDEA adalah sebuah lingkungan pengembangan terintegrasi (IDE) yang digunakan oleh para pengembang perangkat lunak. Dikembangkan oleh JetBrains, IntelliJ IDEA menawarkan berbagai fitur yang kuat dan canggih untuk membantu dalam pengembangan aplikasi. IDE ini menawarkan editor kode yang cerdas dengan dukungan penuh untuk banyak bahasa pemrograman, pemformatan otomatis, penyelesaian kode, debugging, serta integrasi dengan sistem manajemen versi. Selain itu, IntelliJ IDEA menyediakan alat bantu untuk pengujian, pengelolaan _dependency_, dan _refactor code_.
-
-[Download IntelliJ IDEA](http://code.visualstudio.com/download)
-
--   DB Browser for SQLite
-
-DB Browser for SQLite adalah perangkat lunak yang digunakan untuk mengelola dan mengakses basis data SQLite. SQLite merupakan sistem manajemen basis data yang ringan. Dengan menggunakan DB Browser for SQLite, pengguna dapat dengan mudah memanipulasi data pada basis data SQLite. Alat ini berguna bagi pengembang perangkat lunak, analis data, atau siapa pun yang perlu berinteraksi dengan database SQLite melalui GUI.
-
-[Download DB Browser for SQLite](https://sqlitebrowser.org/dl/)
-
-## Prasyarat
-
-Adapun prasyarat untuk menjalankan program ini adalah sebagai berikut:
-
--   Java Development Kit versi 11
-
-[Download JDK](https://www.oracle.com/id/java/technologies/downloads/archive/)
-
--   Jackson versi 2.14.2
-
-[Download Jackson](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind/2.14.2)
-
--   SQLite JDBC versi 3.36.0.3
-
-[Download SQLite JDBC](https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc/3.36.0.3)
-
--   Dotenv Java 3.0.0
-
-[Download Dotenv Java](https://github.com/cdimascio/dotenv-java)
-
-## Batasan Program
-
--   Hanya _request method_ GET, POST, PUT, dan DELETE yang dizinkan.
-
-![Request method not allowed](img/Validate-1.png "Request method not allowed")
-
--   Tidak diperkenankan kesalahan dalam penulisan nama tabel, berikut daftar tabel dengan penulisan yang tepat:
-
-```
-users
-products
-orders
-orderDetails
-addresses
-reviews
-```
+Achmad Jefri Assegaf - 1605552036
 
 ![Table name not found](img/Validate-2.png "Table name not found")
 
@@ -99,7 +25,7 @@ Berikut adalah langkah-langkah untuk menjalankan program ini:
 Untuk dapat melakukan _clone_ repositori ini dengan menggunakan _command_ Git sebagai berikut:
 
 ```
-$ git clone https://github.com/bayurkp/Java-Backend-API
+$ git clone https://github.com/jefriassegaf/Tugas-2-API
 ```
 
 Setelah melakukan _cloning_, Anda harus memenuhi prasyarat pada bagian sebelumnya. Karena proyek ini menggunakan Maven sebagai _build system_-nya maka untuk melaukan instalasi, gunakan _command_ berikut:
@@ -108,7 +34,7 @@ Setelah melakukan _cloning_, Anda harus memenuhi prasyarat pada bagian sebelumny
 $ mvn install
 ```
 
-Jalankan `com.bay.server.Main.main` maka Anda dapat mengakses program API ini pada:
+Jalankan `com.jef.server.Main.main` maka Anda dapat mengakses program API ini pada:
 
 ```
 localhost:8070
@@ -119,13 +45,13 @@ localhost:8070
 Program ini menggunakan API _Key_ untuk otorisasi atau _authorization_. Berikut adalah API _Key_ yang digunakan untuk otorisasi:
 
 ```
-bay_a21dfce2c27396ca29a322bf3d9fe9ffd46339f8197973002d239fb7fe13566c
+jef_a21dfce2c27396ca29a322bf3d9fe9ffd46339f8197973002d239fb7fe13566c
 ```
 
 Mohon masukkan _key_ tersebut pada bagian _request header_ dengan ketentuan sebagai berikut:
 
 ```
-curl -H "Content-Type: application/json" -H "api-key: bay_a21dfce2c27396ca29a322bf3d9fe9ffd46339f8197973002d239fb7fe13566c" localhost:8070/{tableName}
+curl -H "Content-Type: application/json" -H "api-key: jef_a21dfce2c27396ca29a322bf3d9fe9ffd46339f8197973002d239fb7fe13566c" localhost:8070/{tableName}
 ```
 
 Atau pada aplikasi Postman, Anda dapat melakukan konfigurasi sebagai berikut:
@@ -215,7 +141,7 @@ Berikut hasilnya:
 
 ![Select data with paramater f, c, and v](img/GET-9.png "Select with paramater f, c, and v")
 
-Atau, Anda dapat menggunakan _query_ untuk _field_ tertentu seperti contoh berikut:
+Atau,  dapat menggunakan _query_ untuk _field_ tertentu seperti contoh berikut:
 
 ```
 localhost:8070/users?firstName=John
