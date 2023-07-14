@@ -1,4 +1,4 @@
-package com.bay.data;
+package com.je.data;
 
 public class Address {
     private int id;
