@@ -1,7 +1,7 @@
-package com.bay.data;
+package com.je.data;
 
-import com.bay.server.Main;
-import com.bay.server.Parser;
+import com.je.server.Main;
+import com.je.server.Parser;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.sql.*;
