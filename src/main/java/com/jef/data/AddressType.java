@@ -1,4 +1,4 @@
-package com.bay.data;
+package com.je.data;
 
 public enum AddressType {
     House,
