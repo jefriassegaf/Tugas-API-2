@@ -1,6 +1,6 @@
-package com.bay.server;
+package com.je.server;
 
-import com.bay.data.Database;
+import com.je.data.Database;
 
 import java.util.Arrays;
 
