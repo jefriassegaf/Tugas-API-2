@@ -1,4 +1,4 @@
-package com.bay.data;
+package com.je.data;
 
 public class Order {
     private int id;
