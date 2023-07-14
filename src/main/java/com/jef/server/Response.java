@@ -1,7 +1,7 @@
-package com.bay.server;
+package com.je.server;
 
-import com.bay.data.Database;
-import com.bay.data.Result;
+import com.je.data.Database;
+import com.je.data.Result;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.sun.net.httpserver.HttpExchange;
 
